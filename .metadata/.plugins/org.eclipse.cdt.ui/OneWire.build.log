@@ -1,0 +1,29 @@
+
+**** Build of configuration Debug for project OneWire ****
+
+"E:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/OneWire" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../OneWire/OneWire.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/OneWire" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="OneWire/OneWire.d_raw" --obj_directory="OneWire"  "../OneWire/OneWire.c"
+"../OneWire/OneWire.c", line 12: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../OneWire/OneWire.c", line 36: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../OneWire/OneWire.c", line 62: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../OneWire/OneWire.c"
+ 
+Building target: "OneWire.out"
+Invoking: MSP430 Linker
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"OneWire.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccsv8/ccs_base/msp430/include" -i"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/lib" -i"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="OneWire_linkInfo.xml" --use_hw_mpy=none --rom_model -o "OneWire.out" "./main.obj" "./OneWire/OneWire.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "OneWire.out"
+ 
+
+**** Build Finished ****

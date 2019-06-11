@@ -1,0 +1,35 @@
+
+**** Build of configuration Debug for project SPI ****
+
+"E:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/SPI" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 17: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building file: "../SPI/SPI.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/SPI" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="SPI/SPI.d_raw" --obj_directory="SPI"  "../SPI/SPI.c"
+"../SPI/SPI.c", line 79: remark #1528-D: (ULP 3.1) Detected flag polling using IFG2. Recommend using an interrupt combined with enter LPMx and ISR
+"../SPI/SPI.c", line 81: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../SPI/SPI.c", line 81: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../SPI/SPI.c", line 83: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../SPI/SPI.c", line 90: remark #1528-D: (ULP 3.1) Detected flag polling using IFG2. Recommend using an interrupt combined with enter LPMx and ISR
+"../SPI/SPI.c", line 92: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../SPI/SPI.c", line 92: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../SPI/SPI.c", line 94: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../SPI/SPI.c"
+ 
+Building target: "SPI.out"
+Invoking: MSP430 Linker
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"SPI.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccsv8/ccs_base/msp430/include" -i"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/lib" -i"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="SPI_linkInfo.xml" --use_hw_mpy=none --rom_model -o "SPI.out" "./main.obj" "./SPI/SPI.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "SPI.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project C19_GPIO_Interrupt ****
+
+"E:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'C19_GPIO_Interrupt.out' is up to date.
+
+**** Build Finished ****

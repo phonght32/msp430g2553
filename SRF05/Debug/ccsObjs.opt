@@ -1,0 +1,1 @@
+"./main.obj" "./LCD/LCD.obj" "./SRF05/SRF05.obj" "../lnk_msp430g2553.cmd" -llibc.a 

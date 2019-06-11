@@ -1,0 +1,1 @@
+"./main.obj" "./ADC10/ADC10.obj" "./Button/Button.obj" "./Capture/Capture.obj" "./DS1307/DS1307.obj" "./DS18B20/DS18B20.obj" "./I2C/I2C.obj" "./LCD/LCD.obj" "./OneWire/OneWire.obj" "./UART/UART.obj" "../lnk_msp430g2553.cmd" -llibc.a 

@@ -1,0 +1,68 @@
+
+**** Build of configuration Debug for project Joystick ****
+
+"E:\\ti\\ccsv8\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/Joystick" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 29: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+Finished building: "../main.c"
+ 
+Building file: "../Button/Button.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/Joystick" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Button/Button.d_raw" --obj_directory="Button"  "../Button/Button.c"
+"../Button/Button.c", line 31: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+Finished building: "../Button/Button.c"
+ 
+Building file: "../ADC10/ADC10.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/Joystick" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="ADC10/ADC10.d_raw" --obj_directory="ADC10"  "../ADC10/ADC10.c"
+Finished building: "../ADC10/ADC10.c"
+ 
+Building file: "../Joystick/Joystick.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/Joystick" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Joystick/Joystick.d_raw" --obj_directory="Joystick"  "../Joystick/Joystick.c"
+"../Joystick/Joystick.c", line 32: remark #1538-D: (ULP 10.1) ISR ADC10_Interrupt calls function LCD_Goto. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Joystick/Joystick.c", line 33: remark #1538-D: (ULP 10.1) ISR ADC10_Interrupt calls function LCD_Put_Un_Decimal. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Joystick/Joystick.c", line 35: remark #1538-D: (ULP 10.1) ISR ADC10_Interrupt calls function ADC10_Start. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Joystick/Joystick.c", line 46: remark #1538-D: (ULP 10.1) ISR ADC10_Interrupt calls function LCD_Goto. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Joystick/Joystick.c", line 47: remark #1538-D: (ULP 10.1) ISR ADC10_Interrupt calls function LCD_Put_Un_Decimal. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Joystick/Joystick.c", line 49: remark #1538-D: (ULP 10.1) ISR ADC10_Interrupt calls function ADC10_Start. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+Finished building: "../Joystick/Joystick.c"
+ 
+Building file: "../LCD/LCD.c"
+Invoking: MSP430 Compiler
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="E:/ti/ccsv8/ccs_base/msp430/include" --include_path="D:/workspace/workspace_MSP430G2553/Joystick" --include_path="E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="LCD/LCD.d_raw" --obj_directory="LCD"  "../LCD/LCD.c"
+"../LCD/LCD.c", line 21: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../LCD/LCD.c", line 157: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../LCD/LCD.c", line 160: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../LCD/LCD.c", line 172: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../LCD/LCD.c", line 187: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 188: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 218: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 219: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 243: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../LCD/LCD.c", line 249: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../LCD/LCD.c", line 250: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../LCD/LCD.c", line 266: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 267: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 277: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 278: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 236 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 239 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 243 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 250 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 252 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../LCD/LCD.c", line 253 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../LCD/LCD.c"
+ 
+Building target: "Joystick.out"
+Invoking: MSP430 Linker
+"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Joystick.map" --heap_size=80 --stack_size=80 -i"E:/ti/ccsv8/ccs_base/msp430/include" -i"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/lib" -i"E:/ti/ccsv8/tools/compiler/ti-cgt-msp430_18.1.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Joystick_linkInfo.xml" --use_hw_mpy=none --rom_model -o "Joystick.out" "./main.obj" "./ADC10/ADC10.obj" "./Button/Button.obj" "./Joystick/Joystick.obj" "./LCD/LCD.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "Joystick.out"
+ 
+
+**** Build Finished ****
